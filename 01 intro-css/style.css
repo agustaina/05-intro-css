@@ -1,0 +1,58 @@
+
+/* es el elemento de especifidad mas baja; (0, 0, 0) */
+* {
+    background-color: rgb(19, 112, 116);
+}
+/*  las etiquetas no llevan el punto*/
+/* las etiquetas tienen especifidad 001 */
+h1 {
+    color: rgb(9, 9, 43);
+    font-size: 72px;
+    background-color: rgb(29, 201, 201);
+}
+
+/* poniendo estilos a etiquetas que se repiten*/
+
+
+div {
+    background-color: darkkhaki;
+    margin-top: 5%;
+}
+
+/* los class son los siguientes en espeficidad! valen 10 mas que las etiquetas: (0, 1, 0) */
+.divDistinto {
+    background-color: darkslateblue;
+}
+
+/* los id tienen especificidad (1, 0, 0) */
+#textoLorem {
+    color: white;
+}
+/* podemos combinar! ahora es (0, 1, 1) */
+p.textoLorem {
+    color: rgb(243, 172, 40);
+}
+
+
+
+p.textoLorem.texto2{
+    color: orange;
+}
+
+/* impotant pasa por encima de todo! valor (1, 0, 1, 0) */
+/* se hace en ultima instancia */
+.noHaganEsto {
+    color: paleturquoise!important;
+}
+
+/* podemos combinar las etiquetas, suma las efectividades mas bajas (0, 0, 2) */
+
+ul li{
+    list-style-type: armenian;
+}
+
+#textoLorem span {
+    color: plum;
+    background-color: rgb(12, 9, 3);
+    cursor: pointer; 
+}

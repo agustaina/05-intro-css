@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(62, 104, 105);
+    margin: 0%;
+}
+div{
+    background-color: thistle;
+    margin: 4% 25% 3% 10%;
+    padding: 0 5%;
+    border-radius: 10px;
+}
+div p {
+    color: purple;
+}
+p {
+    color: rgb(197, 80, 80);
+}
+
+.Lorem {
+    color: peru;
+}
